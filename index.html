@@ -81,8 +81,13 @@
 
     <div class="white">
       <figure class="sampler">
-        <div align="center"><object type="image/jpeg" data="./static/framework.jpg" width="90%" height="90%" ></object></div>
-        <figcaption><p><b>Generation with 3DiM</b> -- We propose <i>stochastic conditioning</i>, a new sampling strategy where we generate views autoregressively with an image-to-image diffusion model. At each denoising step, we condition on a <i>random</i> previous view, so the denoising process is guided to be 3D consistent to all previous frames with enough denoising steps.</p></figcaption>
+        <div align="center"><object type="image/jpeg" data="./static/framework.jpg" width="80%" height="80%" ></object></div>
+        <figcaption><p><b>3DDesigner</b> An illustration of our framework for text-guided 3D-consistent generation (training phase). (A) NeRF-based Condition Module,
+which takes <one coarse text, two camera views> pairs as inputs and generates low-resolution coarse results. The coarse results are resized
+and concatenated with noised images to provide conditions for denoising. (B) Two-stream Asynchronous Diffusion Module, which takes
+<one full text, two coarse results, two timesteps, two noised images> quadruples as inputs and predicts the added noises. Each stream
+is a vanilla text-guided diffusion model except for the feature interaction module after each attention block. Note that the timesteps are
+randomly generated and the parameters of these two streams are shared. </p></figcaption>
       </figure>
 
     </div>
