@@ -506,7 +506,7 @@ a.read-paper button:hover {
     bottom: 0px;
     width: 100%;
     padding: 4rem;
-    background-color: rgb(230, 230, 230);
+    background-color:#fff;
   }
 
   div.white figure figcaption p {
