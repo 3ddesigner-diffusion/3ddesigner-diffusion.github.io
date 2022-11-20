@@ -275,13 +275,13 @@ a.read-paper button:hover {
     bottom: 0px;
     width: 100%;
     padding: 2rem;
-    background-color: rgb(230, 230, 230);
+    background-color: #fff;
   }
 
   div.header_dark_gray {
     padding: 25px 10px;
-    background-color: rgb(0, 0, 0);
-    color: rgb(245, 245, 245);
+    background-color: #fff;
+    color: black;
   }
 
   div.header_dark_gray h1 {
