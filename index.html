@@ -55,18 +55,18 @@
     <div class="abstract">
       <div class="inside">
         <p class="text">
-          Text-guided diffusion models have shown superior performance in image/video generation and editing. While few explorations have been 
-          performed in 3D scenarios. In this paper, we discuss three fundamental and interesting problems on this topic. First, we 
-          equip text-guided diffusion models to achieve 3D-consistent generation. Specifically, we integrate a NeRF-like neural
-          field to generate low-resolution coarse results for a given camera view. Such results can provide 3D priors as condition information
-          for the following diffusion process. During denoising diffusion, we further enhance the 3D consistency by modeling cross-view 
-          correspondences with a novel two-stream (corresponding to two different views) asynchronous diffusion process. Second, we study
-          3D local editing and propose a two-step solution that can generate 360 degrees manipulated results by editing an object from 
-          a single view. Step 1, we propose to perform 2D local editing by blending the predicted noises. Step 2, we conduct a noise-to-text 
-          inversion process that maps 2D blended noises into the view-independent text embedding space. Once the corresponding text embedding
-          is obtained, 360 degrees images can be generated. Last but not least, we extend our model to perform one-shot novel view synthesis
-          by fine-tuning on a single image, firstly showing the potential of leveraging text guidance for novel view synthesis. 
-          Extensive experiments and various applications show the prowess of our 3DDesigner. 
+Text-guided diffusion models have shown superior performance in image/video generation and editing. While few explorations have been 
+performed in 3D scenarios. In this paper, we discuss three fundamental and interesting problems on this topic. First, we 
+equip text-guided diffusion models to achieve 3D-consistent generation. Specifically, we integrate a NeRF-like neural
+field to generate low-resolution coarse results for a given camera view. Such results can provide 3D priors as condition information
+for the following diffusion process. During denoising diffusion, we further enhance the 3D consistency by modeling cross-view 
+correspondences with a novel two-stream (corresponding to two different views) asynchronous diffusion process. Second, we study
+3D local editing and propose a two-step solution that can generate 360 degrees manipulated results by editing an object from 
+a single view. Step 1, we propose to perform 2D local editing by blending the predicted noises. Step 2, we conduct a noise-to-text 
+inversion process that maps 2D blended noises into the view-independent text embedding space. Once the corresponding text embedding
+is obtained, 360 degrees images can be generated. Last but not least, we extend our model to perform one-shot novel view synthesis
+by fine-tuning on a single image, firstly showing the potential of leveraging text guidance for novel view synthesis. 
+Extensive experiments and various applications show the prowess of our 3DDesigner. 
         </p>
         <br>
         <p class="text">Authored by Gang Li, Heliang Zheng, Chaoyue wang, Chang Li, and DaCheng Tao.</p>
