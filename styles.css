@@ -3,8 +3,8 @@ body {
   font-size: 14px;
   padding: 0;
   margin: 0;
-  background-color: rgb(35, 35, 35);
-  color: rgb(245, 245, 245);
+  background-color: #fff;
+  color: black;
   width:  100%;
 }
 
@@ -17,8 +17,8 @@ video::-internal-media-controls-overlay-cast-button {
 }
 
 div.white {
-  background-color: rgb(255, 255, 255);
-  color: rgb(26, 26, 26);
+  background-color: #fff;
+  color: black;
   margin: 0;
   padding: 0;
 }
@@ -124,8 +124,8 @@ div.authors p {
 }
 
 div.abstract {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: #fff;
+  color: black;
 }
 
 div.abstract div.inside p.text {
