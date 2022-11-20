@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css" />
 
-    <title>Towards Photorealistic 3D Object Generation and Editing with Text-guided Diffusion Models</title>
+    <title>3DDesigner</title>
   </head>
   <body>
     <div style="padding: 2rem 0; background-color: rgb(0, 0, 0);">
@@ -55,11 +55,18 @@
     <div class="abstract">
       <div class="inside">
         <p class="text">
-We present 3DiM (pronounced "three-dim"), a diffusion model for 3D novel view synthesis from as few as a single image.
-The core of 3DiM is an image-to-image diffusion model -- 3DiM takes a single reference view and a relative pose as input, and generates a novel view via diffusion.
-3DiM can then generate a full 3D consistent scene following our novel <i>stochastic conditioning</i> sampler. The output frames of the scene are generated autoregressively. During the reverse diffusion process of each individual frame, we select a random conditioning frame from the set of previous frames at each denoising step. We demonstrate that stochastic conditioning yields much more 3D consistent results compared to the na&#239;ve sampling process which only conditions on a single previous frame.
-We compare 3DiMs to prior work on the SRN ShapeNet dataset, demonstrating that 3DiM's generated videos from a single view achieve much higher fidelity while being approximately 3D consistent. We also introduce a new evaluation methodology, <i>3D consistency scoring</i>, to <i>measure</i> the 3D consistency of a generated object by training a neural field on the model's output views.
-3DiMs are geometry free, do not rely on hyper-networks or test-time optimization for novel view synthesis, and allow a single model to easily scale to a large number of scenes.
+          Text-guided diffusion models have shown superior performance in image/video generation and editing. While few explorations have been 
+          performed in 3D scenarios. In this paper, we discuss three fundamental and interesting problems on this topic. First, we 
+          equip text-guided diffusion models to achieve 3D-consistent generation. Specifically, we integrate a NeRF-like neural
+          field to generate low-resolution coarse results for a given camera view. Such results can provide 3D priors as condition information
+          for the following diffusion process. During denoising diffusion, we further enhance the 3D consistency by modeling cross-view 
+          correspondences with a novel two-stream (corresponding to two different views) asynchronous diffusion process. Second, we study
+          3D local editing and propose a two-step solution that can generate 360 degrees manipulated results by editing an object from 
+          a single view. Step 1, we propose to perform 2D local editing by blending the predicted noises. Step 2, we conduct a noise-to-text 
+          inversion process that maps 2D blended noises into the view-independent text embedding space. Once the corresponding text embedding
+          is obtained, 360$^{\circ}$ images can be generated. Last but not least, we extend our model to perform one-shot novel view synthesis
+          by fine-tuning on a single image, firstly showing the potential of leveraging text guidance for novel view synthesis. 
+          Extensive experiments and various applications show the prowess of our 3DDesigner. 
         </p>
         <br>
         <p class="text">Authored by Daniel Watson, William Chan, Ricardo Martin-Brualla, Jonathan Ho, Andrea Tagliasacchi, and Mohammad Norouzi from Google Research.</p>
