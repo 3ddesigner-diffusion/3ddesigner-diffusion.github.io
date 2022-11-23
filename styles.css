@@ -112,9 +112,9 @@ div.sota-comparisons .col video {
 }
 
 div.authors {
-  background-color: rgb(26, 26, 26);
-  /* background-color: rgb(245, 245, 245); */
-  color: rgb(255, 255, 255);
+  /* background-color: rgb(26, 26, 26); */
+  background-color: rgb(245, 245, 245);
+  color: rgb(26, 26, 26);
 }
 
 div.authors p {
