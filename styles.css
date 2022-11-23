@@ -297,10 +297,10 @@ a.read-paper button:hover {
   a.read-paper button {
     width: 140px;
     padding: 10px;
-    background: none;
+    background: rgb(26, 26, 26);
     font: inherit;
     border: 1px solid white;
-    color: rgb(26, 26, 26);
+    color: white;
     border-radius: 4px;
   }
 
