@@ -300,7 +300,7 @@ a.read-paper button:hover {
     background: none;
     font: inherit;
     border: 1px solid white;
-    color: white;
+    color: rgb(26, 26, 26);
     border-radius: 4px;
   }
 
