@@ -474,7 +474,8 @@ a.read-paper button:hover {
   }
 
   div.authors {
-    padding: 50px 100px;
+    /*padding: 50px 100px;*/
+    padding: 0px 0px;
     font-size: 1.25em;
   }
 
