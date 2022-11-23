@@ -535,9 +535,10 @@ a.read-paper button:hover {
     width: 200px;
     height: 50px;
     background: None;
+    background-color: gray;
     font: inherit;
     border: 1px solid white;
-    color: #232323;
+    color: white;
     border-radius: 4px;
   }
 }
